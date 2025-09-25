@@ -24,8 +24,8 @@ spec:
     metadata:
       labels:
         app: hello 
-    spec:
-      containers:
-        - name: hello
-          image: arthisundarrajan/k8:latest
-          imagePullPolicy: Always
+spec:
+  containers:
+    - name: hello
+      image: arthisundarrajan/newimage:latest   # <-- correct image
+      imagePullPolicy: Always
